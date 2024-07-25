@@ -1,0 +1,860 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/* NAVBAR  */
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: flex-end;
+  }
+}
+
+.navbar a {
+  position: relative;
+}
+
+.bg-image {
+  background-image: url(../imgs/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  --bs-navbar-nav-link-padding-x: 1rem;
+  --bs-navbar-padding-y: 0.9rem;
+}
+
+.container a.navbar-brand {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+a.underline::before {
+  content: "";
+  position: absolute;
+  top: 80%;
+  left: 20.1%;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+a.underline:hover::before {
+  width: 51%;
+}
+
+@media (max-width: 992px) {
+  a.underline::before {
+    left: 0%;
+  }
+
+  a.underline:hover::before {
+    width: 15%;
+  }
+}
+
+.container div.font a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.dropdown-menu {
+  --bs-dropdown-padding-x: 0.7rem;
+  --bs-dropdown-padding-y: 1.6rem;
+}
+
+.dropdown-menu li a:hover {
+  color: #0078ff;
+  background-color: white;
+}
+
+.bg-image h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 86px;
+  margin-top: 200px;
+}
+
+.backg-overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .bg-image h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-image h1 {
+    font-size: 68px;
+  }
+}
+
+.nav-bar-color {
+  --bs-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.backg-overlay h3::after {
+  content: "";
+  position: relative;
+  top: 0%;
+  left: 0%;
+  animation: text 10s infinite alternate;
+}
+
+@media (min-width: 992px) {
+  .backg-overlay h3 {
+    font-size: 68px;
+  }
+}
+
+@keyframes text {
+  1% {
+    content: "D|";
+  }
+
+  2% {
+    content: "De|";
+  }
+
+  3% {
+    content: "Des|";
+  }
+
+  4% {
+    content: "Desi|";
+  }
+
+  5% {
+    content: "Desig|";
+  }
+
+  6% {
+    content: "Design|";
+  }
+
+  7% {
+    content: "Designer|";
+  }
+
+  8% {
+    content: "Designer";
+  }
+
+  9% {
+    content: "Designer|";
+  }
+
+  10% {
+    content: "Designer";
+  }
+
+  11% {
+    content: "Designer|";
+  }
+
+  12% {
+    content: "Designer";
+  }
+
+  13% {
+    content: "Designe|";
+  }
+
+  14% {
+    content: "Design|";
+  }
+
+  15% {
+    content: "Desig|";
+  }
+
+  16% {
+    content: "Desi|";
+  }
+
+  17% {
+    content: "Des|";
+  }
+
+  18% {
+    content: "De|";
+  }
+
+  19% {
+    content: "Dev|";
+  }
+
+  20% {
+    content: "Deve|";
+  }
+
+  21% {
+    content: "Devel|";
+  }
+
+  22% {
+    content: "Develo|";
+  }
+
+  23% {
+    content: "Develop|";
+  }
+
+  24% {
+    content: "Develope|";
+  }
+
+  25% {
+    content: "Developer|";
+  }
+
+  26% {
+    content: "Developer";
+  }
+
+  27% {
+    content: "Developer|";
+  }
+
+  28% {
+    content: "Developer";
+  }
+
+  29% {
+    content: "Developer|";
+  }
+
+  30% {
+    content: "Developer";
+  }
+
+  31% {
+    content: "Developer|";
+  }
+
+  32% {
+    content: "Develope|";
+  }
+
+  33% {
+    content: "Develop|";
+  }
+
+  34% {
+    content: "Develo|";
+  }
+
+  35% {
+    content: "Devel|";
+  }
+
+  36% {
+    content: "Deve|";
+  }
+
+  37% {
+    content: "Dev|";
+  }
+
+  38% {
+    content: "De|";
+  }
+
+  39% {
+    content: "D|";
+  }
+
+  40% {
+    content: "|";
+  }
+
+  41% {
+    content: "F|";
+  }
+
+  42% {
+    content: "Fr|";
+  }
+
+  43% {
+    content: "Fre|";
+  }
+
+  44% {
+    content: "Free|";
+  }
+
+  45% {
+    content: "Freel|";
+  }
+
+  46% {
+    content: "Freela|";
+  }
+
+  47% {
+    content: "Freelan|";
+  }
+
+  48% {
+    content: "Freelanc|";
+  }
+
+  49% {
+    content: "Freelance|";
+  }
+
+  50% {
+    content: "Freelancer|";
+  }
+
+  51% {
+    content: "Freelancer";
+  }
+
+  52% {
+    content: "Freelancer|";
+  }
+
+  53% {
+    content: "Freelancer";
+  }
+
+  54% {
+    content: "Freelancer|";
+  }
+
+  55% {
+    content: "Freelancer";
+  }
+
+  56% {
+    content: "Freelance|";
+  }
+
+  57% {
+    content: "Freelanc|";
+  }
+
+  58% {
+    content: "Freelan|";
+  }
+
+  59% {
+    content: "Freela|";
+  }
+
+  60% {
+    content: "Freel|";
+  }
+
+  61% {
+    content: "Free|";
+  }
+
+  62% {
+    content: "Fre|";
+  }
+
+  63% {
+    content: "Fr|";
+  }
+
+  64% {
+    content: "F|";
+  }
+
+  65% {
+    content: "|";
+  }
+
+  66% {
+    content: "Ph|";
+  }
+
+  67% {
+    content: "Pho|";
+  }
+
+  68% {
+    content: "Phot|";
+  }
+
+  69% {
+    content: "Photo|";
+  }
+
+  70% {
+    content: "Photog|";
+  }
+
+  71% {
+    content: "Photogr|";
+  }
+
+  72% {
+    content: "Photogra|";
+  }
+
+  73% {
+    content: "Photograp|";
+  }
+
+  74% {
+    content: "Photograph|";
+  }
+
+  75% {
+    content: "Photographe|";
+  }
+
+  76% {
+    content: "Photographer|";
+  }
+
+  80% {
+    content: "Photographer";
+  }
+
+  85% {
+    content: "Photographer|";
+  }
+
+  90% {
+    content: "Photographer";
+  }
+
+  95% {
+    content: "Photographer|";
+  }
+
+  100% {
+    content: "Photographer";
+  }
+}
+
+/* aboutme section */
+
+.abt-me div.container {
+  background-color: #ffffff;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+.about-me-info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+article {
+  position: relative;
+}
+
+article h2::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  height: 3px;
+  width: 88px;
+  background-color: #0078ff;
+}
+
+/* services section */
+
+.srvs {
+  margin-top: 100px;
+}
+
+.card {
+  border: transparent;
+  display: block;
+}
+
+.srvs .card {
+  background-color: #ffffff;
+}
+
+section .services-title {
+  position: relative;
+}
+
+/* QUESTION HERE TO ASK MENTOR REMINDER */
+section .services-title p::after {
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 48.6%;
+  height: 5px;
+  width: 34px;
+  background-color: #0078ff;
+}
+
+.srvs .container i {
+  border: 10px solid;
+  border-radius: 50%;
+  border-color: #0d6efd;
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}
+
+.srvs .container i:hover {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #cfe2ff;
+}
+
+/* Need To Ask Mentor Here */
+.srvs .container .row {
+  --bs-gutter-x: 0.1rem;
+}
+
+.counters {
+  margin-bottom: 86px;
+  margin-top: 127px;
+}
+
+.bg-counters-img {
+  background-image: url(../imgs/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.bg-counters-overlay {
+  position: relative;
+  background-color: rgb(0 119 235 / 61%);
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+@media (max-width: 1200px) {
+
+  .bg-image,
+  .bg-counters-img {
+    background-attachment: scroll;
+  }
+}
+
+.block {
+  color: #cde1f8;
+  margin-inline: 6%;
+}
+
+.counters .block i {
+  border: 10px solid;
+}
+
+/* PORTOFOLIO */
+
+.port {
+  margin-top: 100px;
+}
+
+section .port-title {
+  position: relative;
+}
+
+section .port-title p::after {
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 48.6%;
+  height: 5px;
+  width: 34px;
+  background-color: #0078ff;
+}
+
+.picture {
+  width: 33.33%;
+  border: transparent;
+  background-color: #ffffff;
+}
+
+.row-cols-md-6 .picture .img-div a:hover img {
+  transform: scale(1.5);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .picture {
+    width: 100%;
+  }
+}
+
+.picture img {
+  width: 100%;
+}
+
+.picture-body .col-4 a i.ms-3 {
+  margin-left: 4rem !important;
+}
+
+@media (min-width: 576px) {
+  .ms-sm-5 {
+    margin-left: 5.3rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ms-md-4 {
+    margin-left: 1.1rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ms-md-4 {
+    margin-left: 3rem !important;
+  }
+}
+
+.fs-13 {
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.text-blue {
+  color: #00aaff;
+}
+
+.bg-port-img {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-port-overlay {
+  position: relative;
+  background-color: rgb(0 119 235 / 61%);
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.feedback {
+  margin-top: 150px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: -1rem;
+  margin-left: 15%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+/* BLOG SECTION */
+
+.blog {
+  margin-top: 60px;
+}
+
+section .blog-title {
+  position: relative;
+}
+
+section .blog-title p::after {
+  content: "";
+  position: absolute;
+  top: 101%;
+  left: 48.6%;
+  height: 5px;
+  width: 34px;
+  background-color: #0078ff;
+}
+
+.small-pic {
+  width: 14%;
+}
+
+.small-pic img {
+  width: 100%;
+}
+
+.card .img-and-badge {
+  position: relative;
+}
+
+/* REMINDER QUESTION HERE */
+.card .img-and-badge a span {
+  position: absolute;
+  left: 50%;
+  bottom: -5%;
+  transform: translate(-50%);
+}
+
+.card-body h5,
+.name a {
+  color: black;
+  transition: color 1s;
+}
+
+.card-body h5:hover {
+  color: #00aaff;
+}
+
+.name a:hover {
+  color: #00aaff;
+}
+
+.card-img-top {
+  position: relative;
+}
+
+/* GET IN TOUCH SECTION */
+
+.get-in-touch {
+  margin-top: 100px;
+}
+
+.bg-touch-img {
+  background-image: url(../imgs/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-touch-overlay {
+  position: relative;
+  background-color: rgb(0 119 235 / 61%);
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.whole-form .row .col-md-6 {
+  position: relative;
+}
+
+.whole-form .row .col-md-6 h2.line::after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  left: 8.6%;
+  height: 3px;
+  width: 103px;
+  background-color: #0078ff;
+}
+
+.whole-form {
+  margin-top: 100px;
+}
+
+.form-control {
+  border-radius: 0%;
+}
+
+.form-control:focus {
+  border-color: #0078ff;
+}
+
+textarea.form-control {
+  min-height: calc(6.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+}
+
+.btn {
+  border: solid 5px;
+  margin-top: 4%;
+  margin-left: 33.1%;
+
+  --bs-btn-padding-y: 0.575rem;
+  --bs-border-radius: 2.375rem;
+  border-radius: var(--bs-btn-border-radius);
+}
+
+.btn:hover {
+  border-color: #cfe2ff;
+}
+
+.lower-icons i {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.lower-icons a {
+  border-radius: 50%;
+  border-width: 0px;
+  border: solid 5px;
+  border-color: #0d6efd;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.lower-icons a:hover {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #cfe2ff;
+}
+
+/* FOOTER */
+
+footer div {
+  background-color: #0062d3;
+}
+
+footer div.row {
+  --bs-gutter-x: 0rem;
+}
